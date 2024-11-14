@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+    <header class="header padding-bottom-10">
+        <div class="container">
+            <div class="padding-top-20">
+                <div class="padding-bottom-10 flex space-between align-center gap-40">
+                    <img src="images/icon-logo.png" alt="Recipe App logo">
+                    <label class="header__search flex">
+                        <input class="search" type="search" placeholder="Find recipe or ingredient">
+                        <img class="container__search-icon flex align-center" src="images/search-icon.svg"
+                             alt="search icon">
+                    </label>
+                    <div class="container__like-icon flex align-center">
+                        <img src="images/like-icon.svg" alt="like icon">
+                    </div>
+                </div>
+                <div class="header__navigation flex align-center">
+                    <label class="nav-item" data-category="breakfast">
+                        <p class="font-w-bold">BREAKFAST</p>
+                    </label>
+                    <label class="nav-item" data-category="lunch">
+                        <p class="font-w-bold">LUNCH</p>
+                    </label>
+                    <label class="nav-item" data-category="dinner">
+                        <p class="font-w-bold">DINNERS</p>
+                    </label>
+                    <label class="nav-item" data-category="">
+                        <p class="font-w-bold">receipts</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section padding-top-20">
+        <div class="container">
+            <h1 class="section__title">Receipts</h1>
+            <div class="flex-wrap">
+<!--                <label class="recipe-card flex">-->
+<!--                    <img class="recipe-card__image" src="images/broccoli.jpg" alt="recipe image">-->
+<!--                    <div class="padding-5">-->
+<!--                        <div class="flex space-between">-->
+<!--                            <h3 class="recipe-card__title">Broccoli</h3>-->
+<!--                            <div class="flex align-center">-->
+<!--                                <img src="images/circle__time.svg" alt="image">-->
+<!--                                <p class="recipe-card__readyInMinutes">45 min</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <p class="recipe-card__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                            Adipisci assumenda blanditiis, culpa deleniti facilis impedit iure maxime perspiciatis-->
+<!--                            placeat-->
+<!--                            voluptas!</p>-->
+<!--                    </div>-->
+<!--                </label>-->
+            </div>
+            <div class="see-all flex align-center padding-bottom-10">
+                <p class="txt-capitalize">see all</p>
+                <img src="images/right-arrow.svg" alt="arrow">
+            </div>
+        </div>
+    </section>
+    <script src="script/index.js"></script>
+</body>
+</html>
