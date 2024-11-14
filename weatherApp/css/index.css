@@ -1,0 +1,318 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(110deg, #384858, rgba(200, 200, 200, 1.00) 400%);
+    overflow: hidden;
+}
+
+input {
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+    font-family: Montserrat, serif;
+    color: #cccccc;
+}
+
+span {
+    color: #cccccc;
+}
+
+p {
+    font-family: Montserrat, serif;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-content: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-btw {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+/*    -------------------------------------      header     ---------------------------------     */
+
+.header__container {
+    gap: 10px
+}
+
+.container__search {
+    border-radius: 40px;
+    background: #444;
+    padding: 15px 15px;
+    width: 30rem;
+    position: relative;
+}
+
+.container__search-input {
+    border-radius: 40px;
+    background: #444;
+    width: 95%;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    background-color: #444444;
+    border-top: #444444;
+    width: 86%;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.measure {
+    border-radius: 40px;
+    background: #cccccc;
+    padding: 15px 15px;
+}
+
+.measure__txt {
+    color: #384858;
+    cursor: default;
+    padding: 5px;
+}
+
+.section {
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    background: #384858;
+    box-shadow: 6px 6px 30px -5px;
+    border-radius: 15px;
+
+}
+
+.date__time__container {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.city {
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.date__time__inner__container {
+    justify-items: center;
+    gap: 5px
+}
+
+.time {
+    font-size: 96px;
+    padding-bottom: 5px;
+}
+
+.date {
+    font-size: 20px;
+}
+
+.weather__details {
+    display: flex;
+    padding: 10px;
+    flex-grow: 2;
+    justify-content: space-evenly;
+}
+
+.weather__inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.temperature {
+    font-size: 44px;
+    padding-bottom: 5px;
+}
+
+.sun-state {
+    align-items: center;
+    padding-bottom: 15px;
+    gap: 3px;
+}
+
+.weather-icon {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.weather-txt {
+    font-size: 32px;
+}
+
+.vertical__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather__inner-grid__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 8px;
+}
+
+.img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.forecast {
+    flex-grow: 2;
+    padding: 1rem;
+}
+
+.forecast__title {
+    margin-bottom: 15px;
+}
+
+.forecast__temperature {
+    padding: 8px 0;
+}
+
+.forecast__container {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+.forecast__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    .section {
+        flex-wrap: wrap;
+    }
+
+    .forecast {
+        flex-grow: 1;
+    }
+
+    .weather__details {
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 425px) {
+    .header__title {
+        display: none;
+    }
+
+    .city {
+        font-size: 33px;
+    }
+
+    .time {
+        font-size: 87px;
+    }
+
+    .temperature {
+        font-size: 37px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    img, .img {
+        width: 35px;
+        height: 35px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .weather-txt {
+        font-size: 14px;
+    }
+
+    .weather-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .measure {
+        align-items: center;
+        border-radius: 30px;
+        padding: 5px;
+    }
+
+    .measure__txt {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .forecast__title {
+        font-size: 28px;
+    }
+}

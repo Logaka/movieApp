@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div class="container">
+
+    <header class="flex align-center justify-btw header__container">
+        <h1 class="header__title flex align-items-center">Weather App</h1>
+        <label class="container__search flex align-center ">
+            <input type="text" class="container__search-input" placeholder="search">
+            <img class="container__search-img" src="/images/search-icon.svg" alt="search icon">
+            <ul class="suggestions-list"></ul>
+        </label>
+        
+        <div class="measure flex align-center">
+            <img src="/images/temp.svg" alt="log">
+            <p class="measure__txt flex align-items-center is-units-metric">Celsius</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="date__time__container flex card">
+            <!--            <p class="city"></p>-->
+            <!--            <div class="date__time__inner__container">-->
+            <!--                <h2 class="time"></h2>-->
+            <!--                <h4 class="date"></h4>-->
+            <!--            </div>-->
+        </div>
+        <div class="weather__details flex card">
+            <!--            <div class="weather__inner flex">-->
+            <!--                <div class="temperature__container">-->
+            <!--                    <h3 class="temperature"></h3>-->
+            <!--                    <span class="feel-like"></span>-->
+            <!--                </div>-->
+            <!--                <div>-->
+            <!--                    <div class="sun-state flex">-->
+            <!--                        <img src="images/sunrise-white.svg" alt="sunrise">-->
+            <!--                        <div class="sun__container">-->
+            <!--                            <p>Sunrise</p>-->
+            <!--                            <p class="sunrise">06:37 AM</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                    <div class="sun-state flex">-->
+            <!--                        <img src="images/sunset-white.svg" alt="sunrise">-->
+            <!--                        <div class="sun__container">-->
+            <!--                            <p>Sunset</p>-->
+            <!--                            <p class="sunrise">20:37 AM</p>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            <div class="weather__inner flex">-->
+            <!--                <img src="/images/sunny.png" alt="sunny" class="weather-icon">-->
+            <!--                <p class="weather-txt align-self-center">sunny</p>-->
+            <!--            </div>-->
+            <!--            <div class="weather__inner flex">-->
+            <!--                <div class="weather__inner-grid__container">-->
+            <!--                    <div class="vertical__container">-->
+            <!--                        <img src="images/humidity.svg" alt="humidity" class="img">-->
+            <!--                        <p class="humidity">41%</p>-->
+            <!--                        <p>Humidity</p>-->
+            <!--                    </div>-->
+
+            <!--                    <div class="vertical__container">-->
+            <!--                        <img src="images/pressure-white.png" alt="wind" class="img">-->
+            <!--                        <p class="pressure">997hPa</p>-->
+            <!--                        <p>Pressure</p>-->
+            <!--                    </div>-->
+            <!--                    <div class="vertical__container">-->
+            <!--                        <img src="images/wind.png" alt="wind" class="img">-->
+            <!--                        <p class="wind">2km/h</p>-->
+            <!--                        <p></p>-->
+            <!--                    </div>-->
+            <!--                    <div class="vertical__container">-->
+            <!--                        <img src="images/uv-white.svg" alt="humidity" class="">-->
+            <!--                        <p class="uv"></p>-->
+            <!--                        <p></p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+    </section>
+    <section class="section flex">
+        <div class="card forecast">
+            <h3 class="forecast__title">5 Days Forecast</h3>
+            <div class="flex forecast__container">
+                <img class="forecast__state-img" src="" alt="">
+                <p class="forecast__temperature"></p>
+                <p class="forecast__day"></p>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
+    <script src="script/index.js"></script>
+</div>
+</body>
+</html>
