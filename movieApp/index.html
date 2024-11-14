@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieApp</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div class="container">
+
+    <header class="header__container">
+        <h1 class="header__title flex align-items-center">Movie App</h1>
+
+        <div class="main-search__container">
+            <label class="container__search">
+                <input type="text" class="container__search-input" placeholder="search">
+                <img class="container__search-img" src="/images/search-icon.svg" alt="search icon">
+                <ul class="suggestions-list"></ul>
+            </label>
+
+            <div class="sort__container">
+                <div class="sandwich"></div>
+                <div class="sandwich medium"></div>
+                <div class="sandwich short"></div>
+                <ul class="sort-list hover-effect">
+                    <li class="sort-item active" data-value="popularity.desc">Popular</li>
+                    <li class="sort-item" data-value="primary_release_date.asc">Newest</li>
+                    <li class="sort-item" data-value="primary_release_date.desc">Oldest</li>
+                    <li class="sort-item" data-value="vote_average.desc">High Rating</li>
+                    <li class="sort-item" data-value="vote_average.asc">Low Rating</li>
+                </ul>
+            </div>
+        </div>
+        <div class="watch-list flex align-center">
+            <img class="watch-list__img" src="/images/list.svg" alt="log">
+            <p class="watch__txt flex align-items-center is-units-metric">Watch List</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="grid-layout">
+            <div class="card">
+                <img class="card__img"
+                     src="" alt="">
+                <div class="card__header">
+                    <h3 class="card__title"></h3>
+                    <p class="release-date"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img"
+                     src="" alt="">
+                <div class="card__header">
+                    <h3 class="card__title"></h3>
+                    <p class="release-date"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img"
+                     src="" alt="">
+                <div class="card__header">
+                    <h3 class="card__title"></h3>
+                    <p class="release-date"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img"
+                     src="" alt="">
+                <div class="card__header">
+                    <h3 class="card__title"></h3>
+                    <p class="release-date"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img"
+                     src="" alt="">
+                <div class="card__header">
+                    <h3 class="card__title"></h3>
+                    <p class="release-date"></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img"
+                     src="" alt="">
+                <div class="card__header">
+                    <h3 class="card__title"></h3>
+                    <p class="release-date"></p>
+                </div>
+            </div>
+        </div>
+        <div class="movie__details">
+            <button>Go main page</button>
+            <div class="inner-movie__details">
+                <div class="poster">
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/kD3iC7LBSIekTwuDvnrk6pLLXdr.jpg"
+                         alt="" class="poster-img">
+                </div>
+                <div class="header__poster">
+                    <div class="header-title__movie">
+                        <h1 class="movie__title">Идеально слепленный мужчина (2024)</h1>
+                        <ul class="facts">
+                            <li class="fact">13/11/2024 (KZ)</li>
+                            <li class="fact">мелодрама, комедия</li>
+                            <li class="fact">1h 30m</li>
+                        </ul>
+                    </div>
+                    <div class="header-rate-like__container">
+                        <div class="circle__container">
+                            <span class="rate">61%</span>
+                        </div>
+                        <div class="circle__container">
+                            <img src="/images/like-icon.svg" alt="like">
+                        </div>
+                    </div>
+                    <div class="trailer-link__container">
+                        <img src="/images/arrow.svg" alt="arrow">
+                        <a href="#" class="trailer-link">Look the Trailer</a>
+                    </div>
+                    <div class="main__container">
+                        <h3>Overview</h3>
+                        <div class="overview__container">
+                            <p class="overview">Молодая вдова с помощью волшебного шарфа оживляет харизматичного
+                                снеговика. Удастся ли ей
+                                снова научиться смеяться, влюбляться и радоваться празднику, пока не растаял снег?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-poster">
+                </div>
+            </div>
+            <h1 class="actors">Actors</h1>
+            <div class="cast__container">
+                <div class="cast-card">
+                    <img class="cast-img"
+                         src="https://media.themoviedb.org/t/p/w138_and_h175_face/lYRtX2k8A1Y52IQdpKS9Louaf1j.jpg"
+                         alt="img">
+                    <div class="cast-inner__container">
+                        <h1 class="cast-title">Лейси Шабер</h1>
+                        <p class="person">Kathy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/script/util.js"></script>
+    <script src="/script/index.js"></script>
+</div>
+</body>
+</html>
